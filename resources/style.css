@@ -1,1 +1,103 @@
 /* STYLING */
+
+/*  HEADER SECTION */
+header {
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.logo {
+  padding-left: 24px;
+  display:flex;
+  align-items: center;
+}
+
+nav{
+  padding-right: 24px;
+}
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 16px;
+}
+
+/* BANNER MAIN SECTION */
+
+.banner{
+  background-color: maroon;
+  display: flex;
+  align-items: flex-start;
+}
+
+.banner img {
+  padding: 32px 24px;
+  width:60%;
+}
+
+.banner .main-description{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 150px 10% 100px 0;
+}
+
+.banner .main-description h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  padding-bottom: 24px;
+  line-height: 1.4;
+}
+
+.banner .main-description p {
+  color: white;
+  font-size: 20px;
+  padding-bottom:24px;
+  line-height: 1.4;
+}
+
+.banner .main-description .button {
+  background-color: white;
+  border: 1px solid white;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ADDITIONAL TOPIC SECTION */
+
+.additional-topic{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.additional-topic .information{
+  display:flex;
+  flex-direction: column;
+  padding: 32px 24px;
+}
+
+.additional-topic .information img{
+  width: 60%;
+  padding-bottom:32px;
+}
+
+.additional-topic .articles {
+  display:flex;
+  flex-direction: column;
+}
+
+.additional-topic .articles .article{
+  width: 40%;
+  display:flex;
+  justify-content: flex-start;
+
+}
+.additional-topic .articles .article img{
+  height: auto;
+  width:35%;
+  padding: 16px 16px;
+}
