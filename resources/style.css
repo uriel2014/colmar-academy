@@ -14,13 +14,29 @@ header {
   align-items: center;
 }
 
+.logo p{
+  color: grey;
+}
+.logo p span{
+  font-weight: bold;
+  color:black;
+}
+
 nav{
   padding-right: 24px;
+  display:flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 nav li {
   list-style-type: none;
   display: inline-block;
-  padding-right: 16px;
+}
+
+nav li:nth-child(2n+0){
+  background-color: skyblue;
+  width:16px;
+  height:64px;
 }
 
 /* BANNER MAIN SECTION */
@@ -40,7 +56,7 @@ nav li {
   display:flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 150px 10% 100px 0;
+  padding: 150px 75px 100px 0;
 }
 
 .banner .main-description h1 {
@@ -78,26 +94,202 @@ nav li {
   display:flex;
   flex-direction: column;
   padding: 32px 24px;
+  border-right: 1px solid maroon;
+  width:60%;
 }
 
 .additional-topic .information img{
-  width: 60%;
+  width: 100%;
+  padding-bottom:32px;
+}
+
+.additional-topic .information h2{
+  font-weight: bold;
+  font-size:30px;
+  padding-bottom:24px;
+}
+
+.additional-topic .information p{
   padding-bottom:32px;
 }
 
 .additional-topic .articles {
   display:flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .additional-topic .articles .article{
-  width: 40%;
   display:flex;
   justify-content: flex-start;
+  border-bottom: 1px solid maroon;
 
 }
+
+.additional-topic .articles .article:hover{
+  background-color: lightgrey;
+}
+
 .additional-topic .articles .article img{
   height: auto;
   width:35%;
-  padding: 16px 16px;
+  padding: 16px 0 16px 16px;
+}
+
+.additional-topic .articles .article .article-content{
+  display:flex;
+  flex-direction: column;
+  width:65%;
+  padding: 40px 0 35px 16px;
+}
+
+.additional-topic .articles .article .article-content h3{
+  font-size:20px;
+  font-weight: bold;
+  padding-bottom:8px;
+}
+
+.additional-topic .articles .article .article-content p{
+  line-height: 1.2;
+  padding-bottom: 8px;
+}
+
+.additional-topic .articles .article .article-content span{
+  color: blue;
+}
+
+/* START LEARNING SECTION */
+
+.start-learning {
+  background-color: maroon;
+  color:white;
+  display:flex;
+  flex-direction:column;
+}
+.start-learning h1{
+  padding-top: 32px;
+  text-align:center;
+  font-weight: bold;
+  font-size:45px;
+}
+
+.start-learning .courses {
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 32px 72px;
+  margin: 0 auto;
+}
+
+.start-learning .courses .course {
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px 32px 0;
+}
+.start-learning .courses .course img{
+  height: auto;
+}
+.start-learning .courses .course .topic{
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 24px 16px;
+  background-color: white;
+  color: black;
+  height:150px;
+}
+.start-learning .courses .course .topic h2{
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom:16px;
+}
+
+.start-learning .courses .course .topic p{
+  padding: 8px 0 8px 0;
+  line-height: 1.2;
+}
+
+
+/* THESIS EXHIBIT SECTION */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis h1{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-size: 45px;
+  text-align: center;
+}
+
+.thesis .thesis-content{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.thesis .thesis-content .main-thesis{
+  display:flex;
+  flex-direction: column;
+  padding: 0 24px 32px 24px;
+  width:60%;
+}
+.thesis .thesis-content .main-thesis video{
+  width:100%;
+  padding-bottom: 24px;
+}
+.thesis .thesis-content .main-thesis h3{
+  font-weight: bold;
+  font-size:16px;
+  padding-bottom: 8px;
+}
+
+.thesis .thesis-content .thesis-topics{
+  width:40%;
+  display:flex;
+  flex-direction: column;
+}
+
+.thesis .thesis-content .thesis-topics .thesis-topic{
+  display:flex;
+  justify-content: flex-start;
+  padding: 16px 0 16px 16px;
+}
+
+.thesis .thesis-content .thesis-topics .thesis-topic img{
+  width:35%;
+  height:auto;
+}
+.thesis .thesis-content .thesis-topics .thesis-topic .topic-content{
+  width:65%;
+  padding: 32px 0 32px 16px;
+}
+.thesis .thesis-content .thesis-topics .thesis-topic .topic-content:hover{
+  background-color: lightgrey;
+}
+
+.thesis .thesis-content .thesis-topics .thesis-topic .topic-content h3{
+ font-size:24px;
+ font-weight: bold;
+ padding-bottom: 16px;
+}
+.thesis .thesis-content .thesis-topics .thesis-topic .topic-content p{
+  line-height: 1.2;
+}
+
+/* FOOTER SECTION */
+
+footer{
+  border-top: 1px solid lightgrey;
+  padding-top: 16px;
+  padding-left: 24px;
+  display:flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  background-color: maroon;
+  color:white;
+}
+footer nav span{
+  padding-right: 8px;
 }
