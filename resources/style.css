@@ -6,7 +6,6 @@ header {
   height: 64px;
   justify-content: space-between;
   align-items: center;
-
 }
 .logo {
   padding-left: 24px;
@@ -37,6 +36,15 @@ nav li:nth-child(2n+0){
   background-color: skyblue;
   width:16px;
   height:64px;
+}
+/* Nth child with li is used to fill the skyblue sections */
+
+@media only screen and (max-width:480px){
+  header{
+    display:flex;
+    justify-content: space-around;
+    height: 64px;
+  }
 }
 
 /* BANNER MAIN SECTION */
@@ -82,6 +90,34 @@ nav li:nth-child(2n+0){
   text-align: center;
   padding: 10px;
 }
+@media only screen and (max-width:480px){
+  .banner img{
+    width:100%;
+  }
+  .banner .main-description{
+    display:flex;
+    flex-direction: column;
+    padding: 32px 0 32px 16px;
+    background-color: maroon;
+  }
+  .banner .main-description h1{
+    padding-bottom:32px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .banner .main-description p{
+    padding-bottom:24px;
+  }
+  .banner .main-description .button {
+    background-color: white;
+    border: 1px solid white;
+    color: blue;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
 
 /* ADDITIONAL TOPIC SECTION */
 
@@ -97,6 +133,8 @@ nav li:nth-child(2n+0){
   border-right: 1px solid maroon;
   width:60%;
 }
+
+/* We shall make the width of the information class to 60% */
 
 .additional-topic .information img{
   width: 100%;
@@ -156,6 +194,54 @@ nav li:nth-child(2n+0){
 
 .additional-topic .articles .article .article-content span{
   color: blue;
+}
+
+@media only screen and (max-width:480px){
+
+  .additional-topic .articles{
+    display:flex;
+    flex-direction: column;
+    padding-bottom:32px;
+  }
+
+  .additional-topic .articles .article{
+    display:flex;
+    flex-direction: column;
+    padding: 16px 0 64
+
+  }
+
+  .additional-topic .articles .article:hover{
+    background-color: lightgrey;
+  }
+
+  .additional-topic .articles .article img{
+    height: auto;
+    width:35%;
+    padding: 16px 0 16px 16px;
+  }
+
+  .additional-topic .articles .article .article-content{
+    display:flex;
+    flex-direction: column;
+    width:65%;
+    padding: 40px 0 35px 16px;
+  }
+
+  .additional-topic .articles .article .article-content h3{
+    font-size:20px;
+    font-weight: bold;
+    padding-bottom:8px;
+  }
+
+  .additional-topic .articles .article .article-content p{
+    line-height: 1.2;
+    padding-bottom: 8px;
+  }
+
+  .additional-topic .articles .article .article-content span{
+    color: blue;
+  }
 }
 
 /* START LEARNING SECTION */
